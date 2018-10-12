@@ -9,6 +9,8 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
 <style>
+hr {color: #000000;background: #ffffff;border-color: #000000}
+
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 .w3-row-padding img {margin-bottom: 12px}
 /* Set the width of the sidebar to 120px */
@@ -18,24 +20,31 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
 </style>
-<body class="w3-black">
+
+<head>
+<link rel="icon" href="shape.jpg">
+</head>
+
+
+<body class="w3-light-grey">
 
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-blue-grey w3-center">
   <!-- Avatar image in top left corner -->
-  <!--<img src="me3.jpg" style="width:100%"> -->
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+  <img src="logo.jpg" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-dark-grey">
     <i class="fa fa-home w3-xlarge"></i>
     <p>HOME</p>
   </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-dark-grey">
     <i class="fa fa-user w3-xlarge"></i>
     <p>ABOUT</p>
   </a>
-  <a href="#resume" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+  <a href="#resume" class="w3-bar-item w3-button w3-padding-large w3-hover-dark-grey">
+    <i class="glyphicon glyphicon-file w3-xlarge"></i>
     <p>RESUME</p>
   </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-dark-grey">
     <i class="fa fa-envelope w3-xlarge"></i>
     <p>CONTACT</p>
   </a>
@@ -43,7 +52,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 <!-- Navbar on small screens (Hidden on medium and large screens) -->
 <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+  <div class="w3-bar w3-blue-grey w3-hover-opacity-off w3-center w3-small">
     <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
     <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
     <a href="#resume" class="w3-bar-item w3-button" style="width:25% !important">RESUME</a>
@@ -54,7 +63,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <!-- Page Content -->
 <div class="w3-padding-large" id="main">
   <!-- Header/Home -->
-  <header class="w3-container w3-padding-16 w3-center w3-black" id="home">
+  <header class="w3-container w3-padding-16 w3-center w3-light-grey" id="home">
     <h1 class="w3-jumbo"><span class="w3-hide-small">Andrew Rall</h1>
     <!-- <p>"A witty saying proves nothing."  -  Voltaire</p>-->
     <!--<img src="berkeleypic2.jpg" alt="boy" class="w3-image" width="1200" height="300">-->
@@ -62,16 +71,16 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
   <!-- About Section -->
   <div class="w3-content w3-justify w3-text-grey w3-padding-16" id="about">
-    <h2 class="w3-text-light-grey">About me</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>Hi! My name is Andrew Rall. I'm a Junior at UC Berkeley majoring in Statistics with an applied cluster in Computer Science. 
+    <h2 class="w3-text-dark-grey">About me</h2>
+    <hr class="w3-opacity"> <!--style="width:200px" class="w3-opacity">-->
+    <p>Hi! My name is Andrew Rall. I'm a Junior at UC Berkeley majoring in Statistics with an applied cluster in Computer Science.  
     </p>
-    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
-    <p class="w3-wide">R (RStudio)</p>
+    <h3 class="w3-padding-16 w3-text-dark-grey">My Skills</h3>
+    <p class="w3-wide">Python</p>
     <div class="w3-white">
       <div class="w3-dark-grey" style="height:28px;width:90%"></div>
     </div>
-    <p class="w3-wide">Python</p>
+    <p class="w3-wide">R (RStudio)</p>
     <div class="w3-white">
       <div class="w3-dark-grey" style="height:28px;width:90%"></div>
     </div>
@@ -88,7 +97,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
       <div class="w3-dark-grey" style="height:28px;width:70%"></div>
     </div><br>
     
-    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-blue-grey">
       <div class="w3-quarter w3-section">
         <span class="w3-xlarge">Data Wrangling</span><br>
         dplyr, tidyr, stringr, Pandas, NumPy, SciPy
@@ -108,7 +117,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     </div>
 
     
-    <h3 class="w3-padding-16 w3-text-light-grey">Notable Courses I've Taken</h3>
+    <h3 class="w3-padding-16 w3-text-dark-grey">Notable Courses I've Taken</h3>
     <p>Stat 133: Concepts in Computing with Data</p>
     <p> Stat 134: Concepts of Probability </p>
     <p> Stat 135: Concepts of Statistics </p>
@@ -120,14 +129,31 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <p>	Data 100: Principles & Techniques of Data Science</p>
     
     
-    <h3 class="w3-padding-16 w3-text-light-grey">Experience</h3>
+    <h3 class="w3-padding-16 w3-text-dark-grey">Experience</h3>
     <p>Throughout my time at UC Berkeley I've committed numerous projects and other course material to my <a href="https://github.com/andrewr0498">GitHub</a> account, including this very website! Although the vast majority of my repositories are private, feel free to reach out to me if you are interested in seeing what I did for any of the courses listed above.
     </p>
-    <p>Summer 2018:  I worked as a lab assistant for Data 8, an introductory data science course. I helped manage a section of around 30 students while learning how to effectively explain difficult concepts.
+    <br>
+    <p><u>Fall 2018</u>:</p>
+    <p>
+    As a part of the Sports Analytics Group at Berkeley (SAGB) I am currently on a consulting team for Cal Football. We are creating an improved fourth-down decision making model for the coaches to reference in-game.
+	</p>
+	<p>
+	I am a part of the Education Committee for the Statistics Undergraduate Student Assocation (SUSA). I have created and presented a <a href="https://andrewr0498.shinyapps.io/l5tidyverse/">lecture on tidyverse</a>, hosted a resume building workshop, and helped create a student taught course (DeCal) for Spring 2019.
+	</p>
+	<br>
+    <p><u>Summer-Fall 2018</u>:</p>
+    <p>
+    I worked as a lab assistant for Data 8, an introductory data science course. I helped manage a section of around 30 students while learning how to effectively explain difficult concepts.
     </p>
-    <p>Summer 2017:  I was a Research Intern in the Division of Gastroenterology at Massachusetts General Hospital. I was responsible for extracting information relevant to <a href="https://en.wikipedia.org/wiki/Familial_adenomatous_polyposis">Familial Adenomatous Polyposis (FAP)</a> from patient’s medical records and then entering that information into a data collection platform (RedCap) to be used for further research.
+    <br>
+    <p><u>Summer 2017</u>:</p>
+    <p>
+    I was a Research Intern in the Division of Gastroenterology at Massachusetts General Hospital. I was responsible for extracting information relevant to <a href="https://en.wikipedia.org/wiki/Familial_adenomatous_polyposis">Familial Adenomatous Polyposis (FAP)</a> from patient’s medical records and then entering that information into a data collection platform (RedCap) to be used for further research.
     </p>
-    <p>Spring 2016: I was part of a team that researched the emergence and spread of the superbug New Delhi Metallo-beta-lactamase 1 (NDM-1). We presented our <a href="https://github.com/andrewr0498/andrewr0498.github.io/blob/master/poster.pdf">research</a> at the Milwaukee School of Engineering and the Marshfield Clinic Research Foundation.
+    <br>
+    <p><u>Spring 2016</u>:</p>
+    <p>
+    I was part of a team that researched the emergence and spread of the superbug New Delhi Metallo-beta-lactamase 1 (NDM-1). We presented our <a href="https://github.com/andrewr0498/andrewr0498.github.io/blob/master/poster.pdf">research</a> at the Milwaukee School of Engineering and the Marshfield Clinic Research Foundation.
     </p>
   <!-- End About Section -->
   </div>
@@ -138,13 +164,13 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
   <!-- Contact Section -->
   <div class="w3-padding-32 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey">Contact Me</h2>
-    <hr style="width:200px" class="w3-opacity">
+    <h2 class="w3-text-dark-grey">Contact Me</h2>
+    <hr> <!--style="width:200px" class="w3-opacity">-->
 
     <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> 2116 Allston Way Apt. 516 Berkeley, CA 94704</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: 715 223 7230</p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: andrewr0498@berkeley.edu</p>
+      <p><i class="fa fa-map-marker fa-fw w3-text-black w3-xxlarge w3-margin-right"></i> 2116 Allston Way Apt. 516 Berkeley, CA 94704</p>
+      <p><i class="fa fa-phone fa-fw w3-text-black w3-xxlarge w3-margin-right"></i> Phone: 715 223 7230</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-black w3-xxlarge w3-margin-right"> </i> Email: andrewr0498@berkeley.edu</p>
     </div><br>
     <!-- <p>Lets get in touch. Send me a message:</p>
 
